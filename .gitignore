@@ -12,3 +12,14 @@ aws/
 
 # Editor settings
 .vscode/
+
+# Build artifacts
+node_modules/
+src/
+dist/
+tailwind.config.js
+package.json
+package-lock.json
+
+# Claude
+.claude/
