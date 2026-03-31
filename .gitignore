@@ -1,0 +1,14 @@
+# AWS credentials and local deployment material
+aws/
+.aws/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Common local secrets
+.env
+.env.*
+
+# Editor settings
+.vscode/
