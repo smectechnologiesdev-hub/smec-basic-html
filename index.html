@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master in Advanced AI &amp; Big Data Analytics with Gen AI | SMEC Technologies – 25+ Years of Excellence</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <meta name="description" content="Master Advanced AI, Big Data Analytics & Gen AI with SMEC Technologies. 25+ years of industry excellence. Job placement support, real-time projects, expert mentors. Centres in Kochi, Calicut & Trivandrum."/>
     <meta name="keywords" content="data science course Kerala, AI ML training, big data analytics, SMEC Technologies, data science Kochi, machine learning course, Gen AI training, Python course, TensorFlow training, placement support Kerala"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
         
         :root {
             --tw-color-primary: #0071bc;
@@ -237,7 +241,7 @@
 
                     <!-- LOGO -->
                     <a href="#" class="flex items-center shrink-0 group">
-                        <img src="logo.png" alt="SMEC Technologies" class="h-14 md:h-16 object-contain group-hover:scale-[1.02] transition-transform"/>
+                        <img src="logo.png" alt="SMEC Technologies" class="h-14 md:h-16 object-contain group-hover:scale-[1.02] transition-transform" width="220" height="98" loading="eager"/>
                     </a>
 
                     <!-- DESKTOP NAV (hidden below lg) -->
@@ -265,7 +269,7 @@
                     <!-- RIGHT ACTIONS -->
                     <div class="flex items-center gap-2 md:gap-3 shrink-0">
                         <!-- Call - always visible, icon on mobile, full on xl -->
-                        <a href="tel:+919778191215" class="group flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors whitespace-nowrap">
+                        <a href="tel:+919778191215" class="group flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-600 transition-colors whitespace-nowrap" aria-label="Call +91 9778191215">
                             <span class="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-emerald-50 group-hover:bg-emerald-100 flex items-center justify-center transition-colors shrink-0">
                                 <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                             </span>
@@ -307,7 +311,7 @@
                 <div class="flex items-center">
                     <img src="logo.png" alt="SMEC Technologies" class="h-9 object-contain"/>
                 </div>
-                <button onclick="toggleMobileMenu()" class="w-9 h-9 rounded-xl bg-slate-50 hover:bg-slate-100 flex items-center justify-center transition-colors">
+                <button onclick="toggleMobileMenu()" class="w-9 h-9 rounded-xl bg-slate-50 hover:bg-slate-100 flex items-center justify-center transition-colors" aria-label="Close menu">
                     <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                 </button>
             </div>
@@ -412,6 +416,7 @@
 
     </header>
 
+    <main>
     <!-- HERO SECTION -->
     <div class="hero-bg">
         <div class="max-w-7xl mx-auto px-4 pt-8 pb-12 grid md:grid-cols-12 gap-8 md:gap-12 items-center">
@@ -515,9 +520,9 @@
                         
                         <div class="flex items-start gap-2.5 text-[12px] text-slate-500 pt-1">
                             <div class="flex items-center h-5">
-                                <input type="checkbox" checked class="w-4 h-4 text-[#0071bc] bg-slate-100 border-slate-300 rounded focus:ring-[#0071bc] focus:ring-2 cursor-pointer transition-all">
+                                <input type="checkbox" checked id="terms-checkbox" class="w-4 h-4 text-[#0071bc] bg-slate-100 border-slate-300 rounded focus:ring-[#0071bc] focus:ring-2 cursor-pointer transition-all">
                             </div>
-                            <label class="leading-tight cursor-pointer pt-0.5">I agree to the <a href="#" class="text-[#0071bc] hover:text-[#2e3192] hover:underline font-medium">Terms</a> &amp; <a href="#" class="text-[#0071bc] hover:text-[#2e3192] hover:underline font-medium">Privacy Policy</a></label>
+                            <label for="terms-checkbox" class="leading-tight cursor-pointer pt-0.5">I agree to the <a href="#" class="text-[#0071bc] hover:text-[#2e3192] hover:underline font-medium">Terms</a> &amp; <a href="#" class="text-[#0071bc] hover:text-[#2e3192] hover:underline font-medium">Privacy Policy</a></label>
                         </div>
 
                         <div class="pt-2 space-y-3">
@@ -1134,8 +1139,10 @@
         </div>
     </div>
 
+    </main>
+
     <!-- FOOTER TEASER -->
-    <div class="bg-[#0071bc] text-white py-12 text-center">
+    <footer class="bg-[#0071bc] text-white py-12 text-center">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-2xl sm:text-3xl font-bold">Ready to Master AI &amp; Big Data Analytics in 9 Months?</h2>
             <p class="mt-4 max-w-md mx-auto">Join the network of 50,000+ learners placed at top companies worldwide.</p>
@@ -1145,7 +1152,7 @@
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
         </div>
-    </div>
+    </footer>
 
     <!-- Tailwind Script Initialization -->
     <script>
