@@ -6,8 +6,11 @@
   <title>Master in Advanced AI &amp; Big Data Analytics with Gen AI | SMEC Technologies – 25+ Years of Excellence</title>
   <meta name="description" content="Master Advanced AI, Big Data Analytics &amp; Gen AI with SMEC Technologies. 25+ years of industry excellence. Job placement support, real-time projects, expert mentors. Centres in Kochi, Calicut &amp; Trivandrum."/>
   <meta name="keywords" content="data science course Kerala, AI ML training, big data analytics, SMEC Technologies, data science Kochi, machine learning course, Gen AI training, Python course, TensorFlow training, placement support Kerala"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"></noscript>
   <style>
     body { font-family: 'Poppins', sans-serif; }
     .inter { font-family: 'Inter', sans-serif; }
@@ -42,7 +45,7 @@
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
       <a href="#" class="flex items-center">
-        <img src="logo.png" alt="SMEC Technologies" class="h-14 sm:h-16 object-contain"/>
+        <img src="logo.png" alt="SMEC Technologies" class="h-14 sm:h-16 object-contain" width="220" height="98" loading="eager"/>
       </a>
       <!-- Desktop Nav -->
       <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
@@ -59,7 +62,7 @@
         <a href="#enroll" class="bg-[#00a99d] hover:bg-[#008b82] text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors">Enroll Now</a>
       </div>
       <!-- Mobile hamburger -->
-      <button class="md:hidden p-2 rounded text-gray-600" onclick="document.getElementById('mob-menu').classList.toggle('hidden')">
+      <button class="md:hidden p-2 rounded text-gray-600" onclick="document.getElementById('mob-menu').classList.toggle('hidden')" aria-label="Toggle menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
@@ -72,6 +75,7 @@
   </div>
 </nav>
 
+<main>
 <!-- ===== HERO SECTION ===== -->
 <section class="hero-gradient text-white py-12 lg:py-16">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -139,7 +143,7 @@
           <div>
             <label class="text-xs text-blue-200 block mb-1">Phone Number *</label>
             <div class="flex gap-2">
-              <select class="bg-white/15 border border-white/25 rounded-lg px-2 py-2.5 text-sm text-white focus:outline-none">
+              <select aria-label="Country code" class="bg-white/15 border border-white/25 rounded-lg px-2 py-2.5 text-sm text-white focus:outline-none">
                 <option value="+91">🇮🇳 +91</option>
               </select>
               <input type="tel" placeholder="Enter phone number" class="flex-1 bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white placeholder-blue-300 focus:outline-none focus:border-[#00a99d] transition"/>
@@ -147,7 +151,7 @@
           </div>
           <div>
             <label class="text-xs text-blue-200 block mb-1">Current Occupation *</label>
-            <select class="w-full bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none">
+            <select aria-label="Current occupation" class="w-full bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none">
               <option>Select Occupation</option>
               <option>Working Professional</option>
               <option>Student</option>
@@ -751,6 +755,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <!-- ===== FOOTER ===== -->
 <footer class="bg-gray-900 text-gray-400 py-12">
@@ -758,7 +763,7 @@
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-10">
       <div class="col-span-2 sm:col-span-1">
         <div class="mb-4">
-          <img src="logo.png" alt="SMEC Technologies" class="h-10 object-contain brightness-0 invert"/>
+          <img src="logo.png" alt="SMEC Technologies" class="h-10 object-contain brightness-0 invert" width="112" height="50" loading="lazy"/>
         </div>
         <p class="text-xs leading-relaxed">SMEC Technologies is a globally trusted training and technology solutions company with over 25 years of proven excellence in software development, data science, AI, and emerging technologies.</p>
       </div>
