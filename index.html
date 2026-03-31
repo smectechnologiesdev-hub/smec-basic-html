@@ -245,7 +245,10 @@
 
                     <!-- LOGO -->
                     <a href="#" class="flex items-center shrink-0 group">
-                        <img src="logo.png" alt="SMEC Technologies" class="h-14 md:h-16 object-contain group-hover:scale-[1.02] transition-transform" width="220" height="98" loading="eager"/>
+                        <picture>
+                            <source srcset="logo.webp" type="image/webp">
+                            <img src="logo.png" alt="SMEC Technologies" class="h-14 md:h-16 object-contain group-hover:scale-[1.02] transition-transform" width="220" height="98" loading="eager"/>
+                        </picture>
                     </a>
 
                     <!-- DESKTOP NAV (hidden below lg) -->
@@ -313,7 +316,10 @@
             <!-- Drawer Header -->
             <div class="flex items-center justify-between p-5 border-b border-slate-100">
                 <div class="flex items-center">
-                    <img src="logo.png" alt="SMEC Technologies" class="h-9 object-contain" width="100" height="36" loading="lazy"/>
+                    <picture>
+                        <source srcset="logo.webp" type="image/webp">
+                        <img src="logo.png" alt="SMEC Technologies" class="h-9 object-contain" width="100" height="36" loading="lazy"/>
+                    </picture>
                 </div>
                 <button onclick="toggleMobileMenu()" class="w-9 h-9 rounded-xl bg-slate-50 hover:bg-slate-100 flex items-center justify-center transition-colors" aria-label="Close menu">
                     <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
