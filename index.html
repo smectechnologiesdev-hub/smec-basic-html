@@ -502,50 +502,46 @@
                 </div>
             </div>
 
-            <!-- RIGHT FORM -->
+            <!-- RIGHT FORM: Contact Us -->
             <div class="md:col-span-5 relative">
                 <!-- Decorative background blob -->
                 <div class="absolute -inset-4 bg-gradient-to-br from-[#0071bc]/5 to-[#00a99d]/5 rounded-[40px] blur-xl -z-10"></div>
-                
+
                 <div class="bg-white rounded-[28px] shadow-xl shadow-slate-200/50 border border-slate-100 p-7">
                     <div class="flex justify-between items-center mb-6">
-                        <h3 class="text-[22px] font-bold heading-font text-slate-800">Get Complete Details</h3>
-                        <div class="text-[11px] bg-[#0071bc]/10 text-[#0071bc] px-3 py-1 rounded-full font-semibold uppercase tracking-wide border border-[#0071bc]/20">About Course</div>
+                        <h3 class="text-[22px] font-bold heading-font text-slate-800">Contact Us</h3>
+                        <div class="text-[11px] bg-[#0071bc]/10 text-[#0071bc] px-3 py-1 rounded-full font-semibold uppercase tracking-wide border border-[#0071bc]/20">Get in Touch</div>
                     </div>
-                    
-                    <form class="space-y-4">
+
+                    <form action='https://forms.zohopublic.in/edusmectechnologiesgm1/form/ContactUs/formperma/4s14B3scRRGdxjDnQYTwVBCHUHDzUOomQTVqApIyJrI/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data' class="space-y-4">
+                        <input type="hidden" name="zf_referrer_name" value="">
+                        <input type="hidden" name="zf_redirect_url" value="">
+                        <input type="hidden" name="zc_gad" value="">
                         <div>
-                            <input type="text" placeholder="Full Name *" 
-                                   class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:bg-white focus:border-[#0071bc] focus:ring-4 focus:ring-[#0071bc]/10 text-[14px] transition-all placeholder:text-slate-400">
-                        </div>
-                        <div>
-                            <input type="email" placeholder="Email Address *" 
-                                   class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:bg-white focus:border-[#0071bc] focus:ring-4 focus:ring-[#0071bc]/10 text-[14px] transition-all placeholder:text-slate-400">
-                        </div>
-                        <div class="flex">
-                            <div class="bg-slate-50 border border-r-0 border-slate-200 px-4 flex items-center rounded-l-xl text-slate-500 font-medium text-[14px]">+91</div>
-                            <input type="tel" placeholder="Phone Number *" 
-                                   class="flex-1 px-4 py-3 bg-slate-50 border border-slate-200 rounded-r-xl focus:outline-none focus:bg-white focus:border-[#0071bc] focus:ring-4 focus:ring-[#0071bc]/10 text-[14px] transition-all placeholder:text-slate-400">
-                        </div>
-                        
-                        <div class="flex items-start gap-2.5 text-[12px] text-slate-500 pt-1">
-                            <div class="flex items-center h-5">
-                                <input type="checkbox" checked id="terms-checkbox" class="w-4 h-4 text-[#0071bc] bg-slate-100 border-slate-300 rounded focus:ring-[#0071bc] focus:ring-2 cursor-pointer transition-all">
+                            <label class="text-[12px] font-medium text-slate-500 block mb-1.5">Full Name <span class="text-red-400">*</span></label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <input type="text" maxlength="255" name="Name_First" fieldType=7 placeholder="First name"
+                                       class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:bg-white focus:border-[#0071bc] focus:ring-4 focus:ring-[#0071bc]/10 text-[14px] transition-all placeholder:text-slate-400">
+                                <input type="text" maxlength="255" name="Name_Last" fieldType=7 placeholder="Last name"
+                                       class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:bg-white focus:border-[#0071bc] focus:ring-4 focus:ring-[#0071bc]/10 text-[14px] transition-all placeholder:text-slate-400">
                             </div>
-                            <label for="terms-checkbox" class="leading-tight cursor-pointer pt-0.5">I agree to the <a href="#" class="text-[#0071bc] hover:text-[#2e3192] hover:underline font-medium">Terms</a> &amp; <a href="#" class="text-[#0071bc] hover:text-[#2e3192] hover:underline font-medium">Privacy Policy</a></label>
+                        </div>
+                        <div>
+                            <label class="text-[12px] font-medium text-slate-500 block mb-1.5">Email <span class="text-red-400">*</span></label>
+                            <input type="text" maxlength="255" name="Email" value="" fieldType=9 placeholder="Enter your email"
+                                   class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:bg-white focus:border-[#0071bc] focus:ring-4 focus:ring-[#0071bc]/10 text-[14px] transition-all placeholder:text-slate-400">
+                        </div>
+                        <div>
+                            <label class="text-[12px] font-medium text-slate-500 block mb-1.5">Leave us a few words <span class="text-red-400">*</span></label>
+                            <textarea name="MultiLine" maxlength="65535" placeholder="Your message..."
+                                      class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:bg-white focus:border-[#0071bc] focus:ring-4 focus:ring-[#0071bc]/10 text-[14px] transition-all placeholder:text-slate-400 resize-none h-28"></textarea>
                         </div>
 
-                        <div class="pt-2 space-y-3">
-                            <button type="button"
+                        <div class="pt-2">
+                            <button type="submit"
                                     class="w-full bg-gradient-to-r from-[#0071bc] to-[#2e3192] hover:from-[#005a96] hover:to-[#252880] text-white py-3.5 rounded-xl font-semibold text-[15px] shadow-lg shadow-[#0071bc]/25 flex items-center justify-center gap-2 transform active:scale-[0.98] transition-all">
-                                <span>Download Brochure</span>
-                                <svg class="w-4 h-4 ml-1 opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-                            </button>
-
-                            <button type="button"
-                                    class="w-full border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 hover:border-slate-300 py-3.5 rounded-xl font-semibold text-[15px] flex items-center justify-center gap-2 transform active:scale-[0.98] transition-all shadow-sm">
-                                <span class="text-[#25D366]"><svg class="w-5 h-5 relative top-[-1px]" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.772.464 3.498 1.345 5.01L2 22l5.105-1.338A9.976 9.976 0 0012.031 22c5.536 0 10.03-4.495 10.03-10.031C22.062 6.496 17.567 2 12.031 2zm5.485 14.503c-.22.613-1.282 1.134-1.804 1.205-.522.072-1.196.26-3.803-.82-3.149-1.306-5.186-4.52-5.342-4.729-.158-.21-1.275-1.693-1.275-3.235 0-1.543.805-2.298 1.092-2.598.287-.3.621-.375.83-.375.209 0 .418 0 .597.009.191.009.444-.074.693.523.259.622.886 2.162.964 2.32.08.158.132.342.027.551-.105.21-.157.341-.315.525-.157.183-.332.404-.473.553-.158.157-.324.332-.14.646.183.315.814 1.346 1.745 2.172 1.201 1.066 2.219 1.4 2.533 1.558.315.157.5.131.684-.08.184-.21.789-.921 1.001-1.235.21-.315.42-.263.708-.158.288.105 1.815.856 2.13 1.014.316.157.526.236.604.367.08.131.08.761-.14 1.374z" /></svg></span>
-                                Download on WhatsApp
+                                <span>Submit</span>
+                                <svg class="w-4 h-4 ml-1 opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </button>
                         </div>
                     </form>

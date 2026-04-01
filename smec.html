@@ -130,44 +130,36 @@
         </div>
       </div>
 
-      <!-- Right: Enroll Form -->
+      <!-- Right: Contact Form -->
       <div id="enroll" class="w-full lg:w-[380px] bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 shadow-2xl flex-shrink-0">
-        <h3 class="text-lg font-bold text-white mb-1">Get Course Details Now</h3>
-        <p class="text-blue-200 text-xs mb-5">Fill in the details to get a callback from our counsellors</p>
-        <form class="space-y-4">
+        <h3 class="text-lg font-bold text-white mb-1">Contact Us</h3>
+        <p class="text-blue-200 text-xs mb-5">Fill in the details and we'll get back to you</p>
+        <form action='https://forms.zohopublic.in/edusmectechnologiesgm1/form/ContactUs/formperma/4s14B3scRRGdxjDnQYTwVBCHUHDzUOomQTVqApIyJrI/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data' class="space-y-4">
+          <input type="hidden" name="zf_referrer_name" value="">
+          <input type="hidden" name="zf_redirect_url" value="">
+          <input type="hidden" name="zc_gad" value="">
           <div>
-            <label class="text-xs text-blue-200 block mb-1">Full Name *</label>
-            <input type="text" placeholder="Enter your full name" class="w-full bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white placeholder-blue-300 focus:outline-none focus:border-[#00a99d] transition"/>
-          </div>
-          <div>
-            <label class="text-xs text-blue-200 block mb-1">Email Address *</label>
-            <input type="email" placeholder="Enter your email" class="w-full bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white placeholder-blue-300 focus:outline-none focus:border-[#00a99d] transition"/>
-          </div>
-          <div>
-            <label class="text-xs text-blue-200 block mb-1">Phone Number *</label>
+            <label class="text-xs text-blue-200 block mb-1">Full Name <span class="text-[#00a99d]">*</span></label>
             <div class="flex gap-2">
-              <select aria-label="Country code" class="bg-white/15 border border-white/25 rounded-lg px-2 py-2.5 text-sm text-white focus:outline-none">
-                <option value="+91">🇮🇳 +91</option>
-              </select>
-              <input type="tel" placeholder="Enter phone number" class="flex-1 bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white placeholder-blue-300 focus:outline-none focus:border-[#00a99d] transition"/>
+              <div class="flex-1">
+                <input type="text" maxlength="255" name="Name_First" fieldType=7 placeholder="First name" class="w-full bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white placeholder-blue-300 focus:outline-none focus:border-[#00a99d] transition"/>
+              </div>
+              <div class="flex-1">
+                <input type="text" maxlength="255" name="Name_Last" fieldType=7 placeholder="Last name" class="w-full bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white placeholder-blue-300 focus:outline-none focus:border-[#00a99d] transition"/>
+              </div>
             </div>
           </div>
           <div>
-            <label class="text-xs text-blue-200 block mb-1">Current Occupation *</label>
-            <select aria-label="Current occupation" class="w-full bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none">
-              <option>Select Occupation</option>
-              <option>Working Professional</option>
-              <option>Student</option>
-              <option>Fresher</option>
-              <option>Business Owner</option>
-            </select>
+            <label class="text-xs text-blue-200 block mb-1">Email <span class="text-[#00a99d]">*</span></label>
+            <input type="text" maxlength="255" name="Email" value="" fieldType=9 placeholder="Enter your email" class="w-full bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white placeholder-blue-300 focus:outline-none focus:border-[#00a99d] transition"/>
+          </div>
+          <div>
+            <label class="text-xs text-blue-200 block mb-1">Leave us a few words <span class="text-[#00a99d]">*</span></label>
+            <textarea name="MultiLine" maxlength="65535" placeholder="Your message..." class="w-full bg-white/15 border border-white/25 rounded-lg px-4 py-2.5 text-sm text-white placeholder-blue-300 focus:outline-none focus:border-[#00a99d] transition resize-none h-24"></textarea>
           </div>
           <button type="submit" class="w-full bg-[#00a99d] hover:bg-[#008b82] text-white font-bold py-3 rounded-full text-sm transition-colors shadow-lg">
-            Get Free Counselling →
+            Submit →
           </button>
-          <p class="text-center text-xs text-blue-300">
-            Already enrolled? <a href="#" class="text-[#00a99d] underline">Login here</a>
-          </p>
         </form>
       </div>
     </div>
@@ -790,15 +782,6 @@
           <li><a href="#" class="hover:text-[#00a99d] transition-colors">About Us</a></li>
           <li><a href="#" class="hover:text-[#00a99d] transition-colors">Blog</a></li>
           <li><a href="#" class="hover:text-[#00a99d] transition-colors">Careers</a></li>
-          <li><a href="#" class="hover:text-[#00a99d] transition-colors">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-white font-semibold text-sm mb-4">Contact</h4>
-        <ul class="space-y-2 text-xs">
-          <li>📧 info@smectechnologies.com</li>
-          <li>📞 +91 9778191215</li>
-          <li>📍 Kochi | Calicut | Trivandrum</li>
         </ul>
       </div>
     </div>
