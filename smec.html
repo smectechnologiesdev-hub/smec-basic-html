@@ -29,6 +29,47 @@
     .hiring-card:hover { box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
     @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     .fade-in { animation: fadeInUp 0.6s ease forwards; }
+
+    /* Popup Styles */
+    .popup-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 9999;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; visibility: hidden; transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    .popup-overlay.active { opacity: 1; visibility: visible; }
+    .popup-card {
+      background: white; border-radius: 1.25rem; max-width: 460px; width: 92%; position: relative;
+      transform: translateY(30px) scale(0.95); transition: transform 0.4s ease;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.3); overflow: hidden;
+    }
+    .popup-overlay.active .popup-card { transform: translateY(0) scale(1); }
+    .popup-header-box {
+      background: linear-gradient(135deg, #2e3192 0%, #0071bc 50%, #00a99d 100%);
+      padding: 2rem 2rem 1.5rem; text-align: center; color: white;
+    }
+    .popup-header-box h3 { font-size: 1.35rem; font-weight: 800; margin-bottom: 0.4rem; }
+    .popup-header-box p { font-size: 0.8rem; opacity: 0.9; }
+    .popup-body { padding: 1.5rem 2rem 2rem; }
+    .popup-body input, .popup-body select {
+      width: 100%; padding: 0.65rem 0.9rem; border: 1.5px solid #e5e7eb; border-radius: 0.5rem;
+      font-size: 0.85rem; font-family: 'Poppins', sans-serif; margin-bottom: 0.75rem;
+      transition: border-color 0.2s;
+    }
+    .popup-body input:focus, .popup-body select:focus { outline: none; border-color: #00a99d; }
+    .popup-submit {
+      width: 100%; padding: 0.75rem; border: none; border-radius: 2rem; font-weight: 700;
+      font-size: 0.9rem; color: white; cursor: pointer; font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #00a99d 0%, #0071bc 100%);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .popup-submit:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,113,188,0.4); }
+    .popup-close {
+      position: absolute; top: 0.75rem; right: 0.75rem; width: 30px; height: 30px;
+      border-radius: 50%; border: none; background: rgba(255,255,255,0.25); color: white;
+      font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .popup-close:hover { background: rgba(255,255,255,0.45); }
   </style>
 </head>
 <body class="bg-white text-gray-800">
@@ -788,8 +829,8 @@
     <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
       <p>© 2025 SMEC Technologies. All rights reserved.</p>
       <div class="flex gap-4">
-        <a href="#" class="hover:text-[#00a99d] transition-colors">Privacy Policy</a>
-        <a href="#" class="hover:text-[#00a99d] transition-colors">Terms of Use</a>
+        <a href="privacy-policy.html" class="hover:text-[#00a99d] transition-colors">Privacy Policy</a>
+        <a href="terms-and-conditions.html" class="hover:text-[#00a99d] transition-colors">Terms of Use</a>
         <a href="#" class="hover:text-[#00a99d] transition-colors">Refund Policy</a>
       </div>
     </div>
@@ -833,6 +874,69 @@
       if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
     });
   });
+</script>
+
+<!-- ===== POPUP FORM ===== -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-card">
+    <button class="popup-close" onclick="closePopup()" aria-label="Close popup">&times;</button>
+    <div class="popup-header-box">
+      <div style="font-size:2rem;margin-bottom:0.5rem;">🎓</div>
+      <h3>Get a Free Career Consultation</h3>
+      <p>Fill in your details and our counsellor will reach out to you!</p>
+    </div>
+    <div class="popup-body">
+      <input type="text" id="popupName" placeholder="Full Name" required />
+      <input type="email" id="popupEmail" placeholder="Email Address" required />
+      <input type="tel" id="popupPhone" placeholder="Phone Number" required />
+      <select id="popupCourse">
+        <option value="" disabled selected>Select a Course</option>
+        <option value="data-science">Data Science, AI &amp; ML with Gen AI</option>
+        <option value="python-fullstack">Python Full Stack with Gen AI</option>
+        <option value="mern-stack">ME(A)RN Stack with Gen AI</option>
+        <option value="flutter">Flutter Development with Gen AI</option>
+        <option value="uiux">UI/UX Designing with Gen AI</option>
+        <option value="software-testing">Software Testing with Gen AI</option>
+        <option value="data-analytics">Data Analytics</option>
+      </select>
+      <button class="popup-submit" onclick="submitPopup()">Book Free Demo Class &rarr;</button>
+      <p style="text-align:center;font-size:0.7rem;color:#9ca3af;margin-top:0.75rem;">We respect your privacy. No spam, ever.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  setTimeout(function() {
+    if (!sessionStorage.getItem('popupClosed')) {
+      document.getElementById('popupOverlay').classList.add('active');
+    }
+  }, 4000);
+
+  function closePopup() {
+    document.getElementById('popupOverlay').classList.remove('active');
+    sessionStorage.setItem('popupClosed', 'true');
+  }
+
+  document.getElementById('popupOverlay').addEventListener('click', function(e) {
+    if (e.target === this) closePopup();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePopup();
+  });
+
+  function submitPopup() {
+    var name = document.getElementById('popupName').value.trim();
+    var email = document.getElementById('popupEmail').value.trim();
+    var phone = document.getElementById('popupPhone').value.trim();
+    var course = document.getElementById('popupCourse').value;
+    if (!name || !email || !phone || !course) {
+      alert('Please fill in all fields.');
+      return;
+    }
+    alert('Thank you, ' + name + '! Our team will contact you shortly.');
+    closePopup();
+  }
 </script>
 </body>
 </html>

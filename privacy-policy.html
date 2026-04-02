@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy | SMEC Technologies</title>
+  <meta name="description" content="Read the Privacy Policy for SMEC Technologies. Learn how we collect, use, and protect your personal information."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"></noscript>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .inter { font-family: 'Inter', sans-serif; }
+    .hero-gradient { background: linear-gradient(135deg, #2e3192 0%, #1a1f6e 50%, #2e3192 100%); }
+
+    /* Popup Styles */
+    .popup-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 9999;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; visibility: hidden; transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    .popup-overlay.active { opacity: 1; visibility: visible; }
+    .popup-card {
+      background: white; border-radius: 1.25rem; max-width: 460px; width: 92%; position: relative;
+      transform: translateY(30px) scale(0.95); transition: transform 0.4s ease;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.3); overflow: hidden;
+    }
+    .popup-overlay.active .popup-card { transform: translateY(0) scale(1); }
+    .popup-header {
+      background: linear-gradient(135deg, #2e3192 0%, #0071bc 50%, #00a99d 100%);
+      padding: 2rem 2rem 1.5rem; text-align: center; color: white;
+    }
+    .popup-header h3 { font-size: 1.35rem; font-weight: 800; margin-bottom: 0.4rem; }
+    .popup-header p { font-size: 0.8rem; opacity: 0.9; }
+    .popup-body { padding: 1.5rem 2rem 2rem; }
+    .popup-body input, .popup-body select {
+      width: 100%; padding: 0.65rem 0.9rem; border: 1.5px solid #e5e7eb; border-radius: 0.5rem;
+      font-size: 0.85rem; font-family: 'Poppins', sans-serif; margin-bottom: 0.75rem;
+      transition: border-color 0.2s;
+    }
+    .popup-body input:focus, .popup-body select:focus { outline: none; border-color: #00a99d; }
+    .popup-submit {
+      width: 100%; padding: 0.75rem; border: none; border-radius: 2rem; font-weight: 700;
+      font-size: 0.9rem; color: white; cursor: pointer; font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #00a99d 0%, #0071bc 100%);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .popup-submit:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,113,188,0.4); }
+    .popup-close {
+      position: absolute; top: 0.75rem; right: 0.75rem; width: 30px; height: 30px;
+      border-radius: 50%; border: none; background: rgba(255,255,255,0.25); color: white;
+      font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .popup-close:hover { background: rgba(255,255,255,0.45); }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- ===== TOP ANNOUNCEMENT BAR ===== -->
+<div class="bg-gradient-to-r from-[#2e3192] via-[#0071bc] to-[#00a99d] text-center text-xs sm:text-sm font-semibold py-2 px-4 text-white">
+  🎓 Book a <span class="text-yellow-300 font-bold">FREE</span> Demo Class | 25+ Years of Proven Training Excellence!
+  <a href="index.html" class="underline ml-2 text-yellow-300 hover:text-white">Register Now &rarr;</a>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center">
+        <picture>
+          <source srcset="logo.webp" type="image/webp">
+          <img src="logo.png" alt="SMEC Technologies" class="h-14 sm:h-16 object-contain" width="220" height="98" loading="eager"/>
+        </picture>
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
+        <a href="index.html" class="hover:text-[#00a99d] transition-colors">Home</a>
+        <a href="index.html#courses" class="hover:text-[#00a99d] transition-colors">Courses</a>
+        <a href="index.html#contact" class="hover:text-[#00a99d] transition-colors">Contact</a>
+      </div>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="index.html" class="bg-[#00a99d] hover:bg-[#008b82] text-white text-sm font-semibold px-5 py-2 rounded-full transition-colors">Enroll Now</a>
+      </div>
+      <button class="md:hidden p-2 rounded text-gray-600" onclick="document.getElementById('mob-menu').classList.toggle('hidden')" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mob-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-4 flex flex-col gap-3 text-sm font-medium text-gray-700">
+    <a href="index.html">Home</a>
+    <a href="index.html#courses">Courses</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html" class="bg-[#00a99d] text-white text-center py-2 rounded-full font-semibold">Enroll Now</a>
+  </div>
+</nav>
+
+<main>
+<!-- ===== PAGE HEADER ===== -->
+<section class="hero-gradient text-white py-12 lg:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-4">Privacy Policy</h1>
+    <p class="text-blue-200 text-sm sm:text-base max-w-2xl mx-auto">Your privacy matters to us. Learn how we collect, use, and safeguard your personal information.</p>
+    <p class="text-blue-300 text-xs mt-4">Last updated: April 2, 2026</p>
+  </div>
+</section>
+
+<!-- ===== PRIVACY CONTENT ===== -->
+<section class="py-12 lg:py-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">1. Introduction</h2>
+      <p class="text-sm text-gray-600 leading-relaxed mb-3">SMEC Technologies ("Company," "we," "our," or "us") is committed to protecting the privacy and security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, enroll in our courses, or use our services.</p>
+      <p class="text-sm text-gray-600 leading-relaxed">By using our website and services, you consent to the data practices described in this policy. If you do not agree with the terms of this Privacy Policy, please do not access our website or use our services.</p>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">2. Information We Collect</h2>
+      <p class="text-sm text-gray-600 leading-relaxed mb-3">We may collect the following types of information:</p>
+      <h3 class="text-base font-semibold text-gray-800 mb-2">a) Personal Information</h3>
+      <ul class="list-disc list-inside text-sm text-gray-600 leading-relaxed space-y-2 mb-4">
+        <li>Full name, email address, phone number, and mailing address</li>
+        <li>Date of birth and gender</li>
+        <li>Educational qualifications and professional background</li>
+        <li>Payment information (credit/debit card details, UPI, bank transfer information)</li>
+        <li>Government-issued identification (where required for certification)</li>
+      </ul>
+      <h3 class="text-base font-semibold text-gray-800 mb-2">b) Non-Personal Information</h3>
+      <ul class="list-disc list-inside text-sm text-gray-600 leading-relaxed space-y-2 mb-4">
+        <li>Browser type, operating system, and device information</li>
+        <li>IP address and geographic location</li>
+        <li>Pages visited, time spent on pages, and navigation patterns</li>
+        <li>Referring website addresses</li>
+      </ul>
+      <h3 class="text-base font-semibold text-gray-800 mb-2">c) Cookies and Tracking Technologies</h3>
+      <p class="text-sm text-gray-600 leading-relaxed">We use cookies, web beacons, and similar tracking technologies to enhance your browsing experience, analyze website traffic, and personalize content. You can control cookie preferences through your browser settings.</p>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">3. How We Use Your Information</h2>
+      <p class="text-sm text-gray-600 leading-relaxed mb-3">We use the collected information for the following purposes:</p>
+      <ul class="list-disc list-inside text-sm text-gray-600 leading-relaxed space-y-2">
+        <li>To process course enrollments, registrations, and payments</li>
+        <li>To deliver training content, assessments, and certifications</li>
+        <li>To provide placement and internship assistance</li>
+        <li>To communicate with you about courses, updates, events, and promotions</li>
+        <li>To respond to inquiries and provide customer support</li>
+        <li>To improve our website, services, and user experience</li>
+        <li>To comply with legal obligations and enforce our terms</li>
+        <li>To prevent fraud and ensure the security of our platform</li>
+      </ul>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">4. How We Share Your Information</h2>
+      <p class="text-sm text-gray-600 leading-relaxed mb-3">We do not sell, trade, or rent your personal information. We may share your data with:</p>
+      <ul class="list-disc list-inside text-sm text-gray-600 leading-relaxed space-y-2">
+        <li><strong>Recruitment Partners:</strong> With your consent, we may share your resume and profile with hiring companies for placement purposes.</li>
+        <li><strong>Service Providers:</strong> Third-party vendors who assist us with payment processing, email delivery, analytics, and hosting services.</li>
+        <li><strong>Legal Requirements:</strong> When required by law, court order, or government regulation.</li>
+        <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the transaction.</li>
+      </ul>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">5. Data Security</h2>
+      <p class="text-sm text-gray-600 leading-relaxed mb-3">We implement appropriate technical and organizational security measures to protect your personal information, including:</p>
+      <ul class="list-disc list-inside text-sm text-gray-600 leading-relaxed space-y-2">
+        <li>SSL/TLS encryption for data transmission</li>
+        <li>Secure storage of personal data with restricted access</li>
+        <li>Regular security audits and vulnerability assessments</li>
+        <li>Employee training on data protection practices</li>
+      </ul>
+      <p class="text-sm text-gray-600 leading-relaxed mt-3">While we strive to protect your personal information, no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee absolute security.</p>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">6. Data Retention</h2>
+      <p class="text-sm text-gray-600 leading-relaxed">We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law. Student records and course completion data may be retained for certification and verification purposes for up to 10 years.</p>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">7. Your Rights</h2>
+      <p class="text-sm text-gray-600 leading-relaxed mb-3">You have the following rights regarding your personal information:</p>
+      <ul class="list-disc list-inside text-sm text-gray-600 leading-relaxed space-y-2">
+        <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you.</li>
+        <li><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete data.</li>
+        <li><strong>Right to Erasure:</strong> Request deletion of your personal data, subject to legal obligations.</li>
+        <li><strong>Right to Restrict Processing:</strong> Request limitation of how we use your data.</li>
+        <li><strong>Right to Data Portability:</strong> Request your data in a structured, machine-readable format.</li>
+        <li><strong>Right to Withdraw Consent:</strong> Withdraw your consent for data processing at any time.</li>
+      </ul>
+      <p class="text-sm text-gray-600 leading-relaxed mt-3">To exercise any of these rights, please contact us using the information provided below.</p>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">8. Children's Privacy</h2>
+      <p class="text-sm text-gray-600 leading-relaxed">Our services are not directed to individuals under the age of 16. We do not knowingly collect personal information from children under 16. If we become aware that we have collected personal data from a child under 16, we will take steps to delete that information promptly.</p>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">9. Third-Party Services</h2>
+      <p class="text-sm text-gray-600 leading-relaxed">Our website may use third-party services such as Google Analytics, social media plugins, and payment gateways. These services have their own privacy policies, and we encourage you to review them. We are not responsible for the privacy practices of third-party services.</p>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">10. Marketing Communications</h2>
+      <p class="text-sm text-gray-600 leading-relaxed">We may send you promotional emails, SMS, or WhatsApp messages about our courses, events, and offers. You can opt out of marketing communications at any time by clicking the "unsubscribe" link in our emails or contacting us directly. Please note that even after opting out, you may still receive transactional messages related to your enrollment.</p>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">11. Changes to This Privacy Policy</h2>
+      <p class="text-sm text-gray-600 leading-relaxed">We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Any changes will be posted on this page with an updated "Last updated" date. We encourage you to review this policy periodically.</p>
+    </div>
+
+    <div class="mb-10">
+      <h2 class="text-xl sm:text-2xl font-bold text-[#2e3192] mb-4">12. Contact Us</h2>
+      <p class="text-sm text-gray-600 leading-relaxed mb-3">If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+      <div class="bg-gray-50 rounded-xl p-6 text-sm text-gray-600 space-y-2">
+        <p><strong>SMEC Technologies</strong></p>
+        <p>II Floor, Express House, Kaloor, Kochi, Ernakulam, Kerala 682017</p>
+        <p>Phone: +91 9778191215</p>
+        <p>Website: <a href="index.html" class="text-[#00a99d] hover:underline">www.smectechnologies.com</a></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-10">
+      <div class="col-span-2 sm:col-span-1">
+        <div class="mb-4">
+          <picture>
+            <source srcset="logo.webp" type="image/webp">
+            <img src="logo.png" alt="SMEC Technologies" class="h-10 object-contain brightness-0 invert" width="112" height="50" loading="lazy"/>
+          </picture>
+        </div>
+        <p class="text-xs leading-relaxed">SMEC Technologies is a globally trusted training and technology solutions company with over 25 years of proven excellence in software development, data science, AI, and emerging technologies.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4">Courses</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#" class="hover:text-[#00a99d] transition-colors">Data Analytics</a></li>
+          <li><a href="#" class="hover:text-[#00a99d] transition-colors">AI &amp; ML + Data Science</a></li>
+          <li><a href="#" class="hover:text-[#00a99d] transition-colors">AI Python Full Stack</a></li>
+          <li><a href="#" class="hover:text-[#00a99d] transition-colors">AI MERN Stack</a></li>
+          <li><a href="#" class="hover:text-[#00a99d] transition-colors">AI Flutter Dev</a></li>
+          <li><a href="#" class="hover:text-[#00a99d] transition-colors">AI Software Testing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm mb-4">Company</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="index.html" class="hover:text-[#00a99d] transition-colors">About Us</a></li>
+          <li><a href="#" class="hover:text-[#00a99d] transition-colors">Blog</a></li>
+          <li><a href="#" class="hover:text-[#00a99d] transition-colors">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+      <p>&copy; 2025 SMEC Technologies. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="privacy-policy.html" class="hover:text-[#00a99d] transition-colors">Privacy Policy</a>
+        <a href="terms-and-conditions.html" class="hover:text-[#00a99d] transition-colors">Terms of Use</a>
+        <a href="#" class="hover:text-[#00a99d] transition-colors">Refund Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== POPUP FORM ===== -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-card">
+    <button class="popup-close" onclick="closePopup()" aria-label="Close popup">&times;</button>
+    <div class="popup-header">
+      <div class="text-3xl mb-2">🎓</div>
+      <h3>Get a Free Career Consultation</h3>
+      <p>Fill in your details and our counsellor will reach out to you!</p>
+    </div>
+    <div class="popup-body">
+      <input type="text" id="popupName" placeholder="Full Name" required />
+      <input type="email" id="popupEmail" placeholder="Email Address" required />
+      <input type="tel" id="popupPhone" placeholder="Phone Number" required />
+      <select id="popupCourse">
+        <option value="" disabled selected>Select a Course</option>
+        <option value="data-science">Data Science, AI & ML with Gen AI</option>
+        <option value="python-fullstack">Python Full Stack with Gen AI</option>
+        <option value="mern-stack">ME(A)RN Stack with Gen AI</option>
+        <option value="flutter">Flutter Development with Gen AI</option>
+        <option value="uiux">UI/UX Designing with Gen AI</option>
+        <option value="software-testing">Software Testing with Gen AI</option>
+        <option value="data-analytics">Data Analytics</option>
+      </select>
+      <button class="popup-submit" onclick="submitPopup()">Book Free Demo Class &rarr;</button>
+      <p class="text-center text-xs text-gray-400 mt-3">We respect your privacy. No spam, ever.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Show popup after 4 seconds
+  setTimeout(function() {
+    var popup = document.getElementById('popupOverlay');
+    if (!sessionStorage.getItem('popupClosed')) {
+      popup.classList.add('active');
+    }
+  }, 4000);
+
+  function closePopup() {
+    document.getElementById('popupOverlay').classList.remove('active');
+    sessionStorage.setItem('popupClosed', 'true');
+  }
+
+  // Close on overlay click
+  document.getElementById('popupOverlay').addEventListener('click', function(e) {
+    if (e.target === this) closePopup();
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePopup();
+  });
+
+  function submitPopup() {
+    var name = document.getElementById('popupName').value.trim();
+    var email = document.getElementById('popupEmail').value.trim();
+    var phone = document.getElementById('popupPhone').value.trim();
+    var course = document.getElementById('popupCourse').value;
+    if (!name || !email || !phone || !course) {
+      alert('Please fill in all fields.');
+      return;
+    }
+    alert('Thank you, ' + name + '! Our team will contact you shortly.');
+    closePopup();
+  }
+</script>
+</body>
+</html>
